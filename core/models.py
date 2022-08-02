@@ -8,4 +8,3 @@ class Postagem (models.Model):
     autor = models.ForeignKey(User, on_delete=models.CASCADE)
     data= models.DateField(default=timezone.now)
     descricao = models.TextField(max_length=200)
-    
